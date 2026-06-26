@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lumin：Oxelra 科研智能体书稿的公开审议与修订入口。">
+    <title>Lumin | Oxelra Open Review Books</title>
+    <link rel="stylesheet" href="styles.css?v=2026-06-26-card-actions">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <a class="site-title" href="#top" aria-label="Lumin 首页">
+          <img src="assets/lumin-logo.png" alt="" width="1024" height="1024">
+          <span>Lumin</span><strong>Oxelra</strong>
+        </a>
+        <nav class="site-nav" aria-label="页面导航">
+          <a href="#project">项目</a>
+          <a href="#books">书稿</a>
+          <a href="#review">入口</a>
+        </nav>
+        <a class="nav-gh" href="https://github.com/Oxelra-yhy/Lumin">GitHub</a>
+      </div>
+    </header>
+
+    <main id="top" class="site-content">
+      <section class="platform-hero" id="project" aria-labelledby="home-title">
+        <div class="wrapper platform-hero__grid">
+          <div class="platform-hero__copy">
+            <p class="eyebrow">Open Review · Research Books</p>
+            <h1 id="home-title">
+              <span>Lumin: Living Manuscripts</span>
+              <span>in the Open</span>
+            </h1>
+            <p class="platform-hero__kicker">开放演进的科研书稿</p>
+            <p class="platform-hero__lede">
+              汇集 Oxelra 研究书稿、PDF、目录索引、源仓库与公开反馈入口。读者可以从这里进入书稿，也可以把公式、图表、术语和引用问题带回对应仓库。
+            </p>
+            <div class="platform-hero__actions" aria-label="主页快捷入口">
+              <a class="btn btn-secondary" href="#books">浏览书稿</a>
+              <a class="btn btn-primary" href="#review">提交反馈</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="wrapper">
+        <section class="home-section book-section" id="books" aria-labelledby="books-title">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Book Index</p>
+              <h2 id="books-title">开放书稿</h2>
+            </div>
+          </div>
+          <div class="book-grid" id="bookGrid" aria-live="polite"></div>
+        </section>
+
+        <section class="home-section revision-section" id="review" aria-labelledby="review-title">
+          <div class="revision-intro">
+            <div>
+              <p class="eyebrow">Open Review Workflow</p>
+              <p>
+                每本书都在对应源稿仓库完成审议、修订和版本归档；Lumin 只保留索引与分流入口。
+              </p>
+            </div>
+            <h2 id="review-title">从 AI 草稿到共同完善版本</h2>
+          </div>
+
+          <div class="revision-grid">
+            <article class="revision-card">
+              <span>01</span>
+              <h3>开放书稿</h3>
+              <p>发布 PDF、源材料、AI 系统声明、授权和当前审校状态。</p>
+              <div class="revision-card__links">
+                <a href="#books">查看书目</a>
+              </div>
+            </article>
+            <article class="revision-card">
+              <span>02</span>
+              <h3>公共审议</h3>
+              <p>读者按页码、章节、证据和问题类型提交反馈或勘误。</p>
+              <div class="revision-card__links">
+                <a href="https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics">拓扑 Issue</a>
+                <a href="https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics">非厄米 Issue</a>
+              </div>
+            </article>
+            <article class="revision-card">
+              <span>03</span>
+              <h3>证据化修订</h3>
+              <p>维护者在具体书稿仓库整理修订清单，通过 PR 公开修改过程。</p>
+              <div class="revision-card__links">
+                <a href="https://github.com/Oxelra-yhy/Topological-Photonics/pulls">拓扑 PR</a>
+                <a href="https://github.com/Oxelra-yhy/Non-Hermitian/pulls">非厄米 PR</a>
+              </div>
+            </article>
+            <article class="revision-card">
+              <span>04</span>
+              <h3>版本归档</h3>
+              <p>新版本在各书稿仓库通过 Release 归档，并关联已处理的问题和贡献记录。</p>
+              <div class="revision-card__links">
+                <a href="https://github.com/Oxelra-yhy/Topological-Photonics/releases">拓扑 Release</a>
+                <a href="https://github.com/Oxelra-yhy/Non-Hermitian/releases">非厄米 Release</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <span>© Lumin / Oxelra</span>
+        <span>ZJU Yang-Lab</span>
+        <a href="https://oxelra.com/demo/">Oxelra</a>
+      </div>
+    </footer>
+
+    <script src="app.js?v=2026-06-26-card-actions" defer></script>
+  </body>
+</html>

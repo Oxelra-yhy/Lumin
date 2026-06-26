@@ -1,0 +1,12 @@
+{
+  "systems": [
+    {
+      "id": "oxelra-scientific-agent-workflow",
+      "name": "Oxelra Scientific Agent Workflow",
+      "owner": "Oxelra",
+      "description": "面向科研专著草稿的主题规划、章节写作、图表整理、术语一致性检查和公开审阅问题归类流程。",
+      "toolchain": "科研写作智能体、文献线索整理、LaTeX 源稿维护、Issue 审阅整理",
+      "disclosure": "当前书稿处于公开审阅前阶段，事实判断、公式推导、引用准确性和最终版本仍需维护者与领域读者共同复核。"
+    }
+  ]
+}

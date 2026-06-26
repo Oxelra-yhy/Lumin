@@ -1,0 +1,5 @@
+.agents/
+.codex/
+.superpowers/
+__pycache__/
+*.pyc

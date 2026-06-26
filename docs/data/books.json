@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "id": "topological-photonics",
+      "title": "Topological Photonics from Maxwell's Equations",
+      "domain": "拓扑光子学",
+      "status": "源稿已开放 / 待公开审阅",
+      "version": "draft",
+      "system": "Oxelra Scientific Agent Workflow",
+      "reviewLevel": "公开审阅前草稿",
+      "license": "授权待确认",
+      "summary": "从 Maxwell 方程出发组织拓扑光子学的基础框架，覆盖光子能带、Berry 曲率、Chern 数、边界态和体边对应。",
+      "sourceUrl": "https://github.com/Oxelra-yhy/Topological-Photonics",
+      "reviewUrl": "https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics",
+      "releaseUrl": "https://github.com/Oxelra-yhy/Topological-Photonics/releases",
+      "pdfUrl": "downloads/topological-photonics.pdf",
+      "pdfFileName": "topological-photonics.pdf",
+      "workflow": {
+        "phase": "公开审阅准备",
+        "nextAction": "通过 Issues 收集章节、公式、图表和引用问题",
+        "communityNeed": "请帮助定位概念跳跃、公式疑点、参考来源和可复现实验细节。"
+      },
+      "chapters": [
+        "Maxwell 模式与光学能带",
+        "Berry 曲率与拓扑不变量",
+        "边界态与体边对应",
+        "Floquet、Weyl 与非线性扩展"
+      ]
+    },
+    {
+      "id": "non-hermitian",
+      "title": "Non-Hermitian Photonics",
+      "domain": "非厄米光子学",
+      "status": "源稿已开放 / 待公开审阅",
+      "version": "draft",
+      "system": "Oxelra Scientific Agent Workflow",
+      "reviewLevel": "公开审阅前草稿",
+      "license": "授权待确认",
+      "summary": "围绕开放光学系统中的增益、损耗、准正则模、异常点、非布洛赫拓扑、皮肤效应和器件应用展开。",
+      "sourceUrl": "https://github.com/Oxelra-yhy/Non-Hermitian",
+      "reviewUrl": "https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics",
+      "releaseUrl": "https://github.com/Oxelra-yhy/Non-Hermitian/releases",
+      "pdfUrl": "downloads/non-hermitian-photonics.pdf",
+      "pdfFileName": "non-hermitian-photonics.pdf",
+      "workflow": {
+        "phase": "公开审阅准备",
+        "nextAction": "通过 Issues 收集模型假设、术语边界和推导问题",
+        "communityNeed": "请帮助确认非厄米拓扑、异常点、开放边界和实验可复现性相关表述。"
+      },
+      "chapters": [
+        "Maxwell 方程的谱理论视角",
+        "损耗、增益与准正则模",
+        "异常点、PT 对称与散射",
+        "非厄米拓扑、皮肤效应与器件"
+      ]
+    }
+  ]
+}

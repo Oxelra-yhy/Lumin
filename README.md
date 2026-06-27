@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/lumin-logo.png" alt="Lumin" width="64" />
+  <img src="docs/assets/lumin-logo.png" alt="Lumin" width="128" />
 </p>
 
 <h1 align="center">Lumin</h1>
@@ -30,7 +30,7 @@ Lumin 是 Oxelra 的开放知识研究专著入口。这些书稿由智能体参
 
 ### Non-Hermitian Photonics
 
-以开放光学系统为主线，讨论损耗、增益、色散、辐射边界和散射极点如何改变本征模图景，并展开准正规模、异常点、PT 对称、非布洛赫拓扑、皮肤效应、BIC 与器件物理边界。
+以开放光学系统为主线，讨论损耗、增益、色散、辐射边界和散射极点如何改变本征模图景，并展开准正规模、异常点、PT 对称、非布洛赫拓扑、趋肤效应、BIC 与器件物理边界。
 
 [查看仓库](https://github.com/Oxelra-yhy/Non-Hermitian)
 

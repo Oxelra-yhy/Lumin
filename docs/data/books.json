@@ -21,7 +21,7 @@
         "communityNeed": "请帮助定位概念跳跃、公式疑点、参考来源和可复现实验细节。"
       },
       "chapters": [
-        "Maxwell 模式与光学能带",
+        "Maxwell 模式与光子能带",
         "Berry 曲率与拓扑不变量",
         "边界态与体边对应",
         "Floquet、Weyl 与非线性扩展"
@@ -36,7 +36,7 @@
       "system": "Oxelra Open Knowledge Workflow",
       "reviewLevel": "公开审阅前草稿",
       "license": "授权待确认",
-      "summary": "围绕开放光学系统中的增益、损耗、准正则模、异常点、非布洛赫拓扑、皮肤效应和器件应用展开。",
+      "summary": "围绕开放光学系统中的增益、损耗、准正规模、异常点、非布洛赫拓扑、趋肤效应和器件应用展开。",
       "sourceUrl": "https://github.com/Oxelra-yhy/Non-Hermitian",
       "reviewUrl": "https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics",
       "releaseUrl": "https://github.com/Oxelra-yhy/Non-Hermitian/releases",
@@ -49,9 +49,9 @@
       },
       "chapters": [
         "Maxwell 方程的谱理论视角",
-        "损耗、增益与准正则模",
+        "损耗、增益与准正规模",
         "异常点、PT 对称与散射",
-        "非厄米拓扑、皮肤效应与器件"
+        "非厄米拓扑、趋肤效应与器件"
       ]
     }
   ]

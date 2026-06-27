@@ -3,7 +3,7 @@ const nodes = {
   bookCount: document.querySelector("#bookCount")
 };
 
-const DATA_VERSION = "2026-06-26-card-actions";
+const DATA_VERSION = "2026-06-27-open-knowledge";
 
 function escapeHtml(value) {
   return String(value ?? "")

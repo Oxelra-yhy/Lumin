@@ -3,56 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Non-Hermitian Photonics 的 Lumin 书稿详情页。">
+    <meta name="description" content="Non-Hermitian Photonics 是 Lumin 收录的 Open Knowledge Book。">
     <title>Non-Hermitian Photonics | Lumin</title>
-    <link rel="stylesheet" href="../../styles.css?v=2026-06-26-redesign">
+    <link rel="stylesheet" href="../../styles.css?v=2026-06-27-open-books-redesign-8">
   </head>
   <body>
     <header class="site-header">
       <div class="wrapper header-inner">
-        <a class="site-title" href="../../" aria-label="Lumin 首页">
+        <a class="site-mark" href="../../" aria-label="Lumin 首页">
           <img src="../../assets/lumin-logo.png" alt="" width="1024" height="1024">
-          <span>Lumin</span><strong>Oxelra</strong>
+          <span>
+            <strong>Lumin</strong>
+            <small>Open Knowledge Books</small>
+          </span>
         </a>
-        <a class="nav-gh" href="https://github.com/Oxelra-yhy/Non-Hermitian">GitHub</a>
+
+        <nav class="site-nav" aria-label="页面导航">
+          <a href="../../#project">Project</a>
+          <a href="../../#books">Books</a>
+          <a href="../../#review">Open Review</a>
+        </nav>
+
+        <a class="header-link" href="https://github.com/Oxelra-yhy/Non-Hermitian" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </header>
 
-    <main class="book-detail-main">
-      <section class="book-detail-hero">
-        <div class="wrapper book-detail-grid">
-          <div class="book-detail-copy">
-            <a class="crumb" href="../../#books">返回书目</a>
-            <p class="eyebrow">Non-Hermitian Photonics</p>
+    <main>
+      <section class="detail-hero">
+        <div class="wrapper detail-hero-layout">
+          <div class="detail-copy">
+            <a class="crumb" href="../../#books">Back to catalog</a>
+            <p class="section-kicker">Open Knowledge Book · Non-Hermitian Photonics</p>
             <h1>Non-Hermitian Photonics</h1>
             <p>
-              面向开放光学系统中的增益、损耗、准正则模、异常点、非布洛赫拓扑、皮肤效应和器件应用，整理可公开审阅的 LaTeX 源稿。
+              围绕开放光学系统中的增益、损耗、准正则模、异常点、非布洛赫拓扑、皮肤效应和器件应用展开，重点呈现模型边界、谱结构和实验可复现性。
             </p>
-            <div class="detail-actions">
-              <a class="btn btn-primary" href="../../downloads/non-hermitian-photonics.pdf" download="non-hermitian-photonics.pdf">下载 PDF</a>
-              <a class="btn btn-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian">查看仓库</a>
-              <a class="btn btn-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics">提交 Issue</a>
+            <div class="detail-actions" aria-label="书籍操作">
+              <a class="button button-primary" href="../../downloads/non-hermitian-photonics.pdf" download="non-hermitian-photonics.pdf">下载 PDF</a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian" target="_blank" rel="noreferrer">查看源稿</a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics" target="_blank" rel="noreferrer">提交反馈</a>
             </div>
           </div>
+
           <aside class="meta-panel">
-            <h2>元数据</h2>
+            <h2>Book Status</h2>
             <dl class="meta-list">
               <div><dt>ID</dt><dd>non-hermitian</dd></div>
-              <div><dt>状态</dt><dd>源稿已开放 / 待公开审阅</dd></div>
-              <div><dt>版本</dt><dd>draft</dd></div>
-              <div><dt>目录</dt><dd>19 章 / 5 附录</dd></div>
-              <div><dt>仓库</dt><dd>Oxelra-yhy/Non-Hermitian</dd></div>
-              <div><dt>授权</dt><dd>授权待确认</dd></div>
+              <div><dt>Status</dt><dd>Draft / Open Review Pending</dd></div>
+              <div><dt>Format</dt><dd>PDF · LaTeX source · index</dd></div>
+              <div><dt>Repository</dt><dd>Oxelra-yhy/Non-Hermitian</dd></div>
+              <div><dt>License</dt><dd>授权待确认</dd></div>
             </dl>
           </aside>
         </div>
       </section>
 
-      <section class="detail-section wrapper">
-        <div class="content-grid">
+      <section class="detail-section">
+        <div class="wrapper detail-layout">
           <article class="content-card">
+            <p class="section-kicker">Table of Contents</p>
             <h2>目录</h2>
-            <ol class="chapter-steps">
+            <ol class="chapter-list">
               <li><span>01</span><div><strong>Light as an Eigenvalue Problem</strong><p>chapters/ch01_light_as_eigenvalue_problem.tex</p></div></li>
               <li><span>02</span><div><strong>Energy, Inner Products, and Hermiticity</strong><p>chapters/ch02_energy_inner_products_revised.tex</p></div></li>
               <li><span>03</span><div><strong>Periodicity and Photonic Bands</strong><p>chapters/ch03_periodicity_and_photonic_bands_revised.tex</p></div></li>
@@ -79,12 +90,15 @@
               <li><span>E</span><div><strong>Notation and Symbols</strong><p>appendices/app_e_notation_revised.tex</p></div></li>
             </ol>
           </article>
-          <aside class="side-card">
-            <h2>审阅重点</h2>
-            <p>请优先提交模型假设、术语边界、推导跳步、图表证据和实验可复现性问题。当前阶段只通过 Issues 接收公开反馈。</p>
+
+          <aside class="review-note">
+            <h2>Open Review Focus</h2>
+            <p>
+              请优先提交模型假设、术语边界、推导跳步、图表证据和实验可复现性问题。反馈最好指向具体章节、页码、公式或图表。
+            </p>
             <div class="detail-actions">
-              <a class="btn btn-primary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics">新建 Issue</a>
-              <a class="btn btn-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues">查看 Issues</a>
+              <a class="button button-primary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues/new?title=%5BReview%5D%20Non-Hermitian%20Photonics" target="_blank" rel="noreferrer">新建 Issue</a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Non-Hermitian/issues" target="_blank" rel="noreferrer">查看 Issues</a>
             </div>
           </aside>
         </div>
@@ -92,11 +106,11 @@
     </main>
 
     <footer class="site-footer">
-      <div class="wrapper">
+      <div class="wrapper footer-inner">
         <span>© Lumin / Oxelra</span>
         <a href="../../">书目首页</a>
-        <a href="https://github.com/Oxelra-yhy/Non-Hermitian">仓库</a>
-        <a href="https://github.com/Oxelra-yhy/Non-Hermitian/issues">Issues</a>
+        <a href="https://github.com/Oxelra-yhy/Non-Hermitian" target="_blank" rel="noreferrer">仓库</a>
+        <a href="https://github.com/Oxelra-yhy/Non-Hermitian/releases" target="_blank" rel="noreferrer">Releases</a>
       </div>
     </footer>
   </body>

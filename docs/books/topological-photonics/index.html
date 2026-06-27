@@ -1,30 +1,37 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-language="zh">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Topological Photonics from Maxwell's Equations 是 Lumin 收录的 Open Knowledge Book。">
+    <meta name="description" content="Topological Photonics from Maxwell's Equations 是 Lumin 收录的开放知识研究专著。">
     <title>Topological Photonics from Maxwell's Equations | Lumin</title>
     <link rel="stylesheet" href="../../styles.css?v=2026-06-27-open-books-redesign-8">
   </head>
   <body>
     <header class="site-header">
       <div class="wrapper header-inner">
-        <a class="site-mark" href="../../" aria-label="Lumin 首页">
-          <img src="../../assets/lumin-logo.png" alt="" width="1024" height="1024">
-          <span>
+        <div class="site-mark" aria-label="Lumin 与 Oxelra">
+          <a class="site-mark-home" href="../../" aria-label="Lumin 首页">
+            <img src="../../assets/lumin-logo.png" alt="" width="1024" height="1024">
             <strong>Lumin</strong>
-            <small>Open Knowledge Books</small>
-          </span>
-        </a>
+          </a>
+          <span class="site-mark-separator">|</span>
+          <a class="site-mark-oxelra" href="https://oxelra.com/" target="_blank" rel="noreferrer">Oxelra</a>
+        </div>
 
         <nav class="site-nav" aria-label="页面导航">
-          <a href="../../#project">Project</a>
-          <a href="../../#books">Books</a>
-          <a href="../../#review">Open Review</a>
+          <a href="../../#project"><span data-lang="zh">项目</span><span data-lang="en">Project</span></a>
+          <a href="../../#books"><span data-lang="zh">书籍</span><span data-lang="en">Books</span></a>
+          <a href="../../#review"><span data-lang="zh">公开审议</span><span data-lang="en">Open Review</span></a>
         </nav>
 
-        <a class="header-link" href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="header-tools">
+          <div class="language-switch" aria-label="Language">
+            <button type="button" data-lang-option="zh" aria-pressed="true">中文</button>
+            <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="header-link" href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer"><svg class="header-link__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.34 9.34 0 0 1 12 6.98c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.13 10.13 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"/></svg><span>GitHub</span></a>
+        </div>
       </div>
     </header>
 
@@ -32,27 +39,28 @@
       <section class="detail-hero">
         <div class="wrapper detail-hero-layout">
           <div class="detail-copy">
-            <a class="crumb" href="../../#books">Back to catalog</a>
-            <p class="section-kicker">Open Knowledge Book · Topological Photonics</p>
+            <a class="crumb" href="../../#books"><span data-lang="zh">返回书目</span><span data-lang="en">Back to catalog</span></a>
+            <p class="section-kicker"><span data-lang="zh">开放知识研究专著 · 拓扑光子学</span><span data-lang="en">Open Knowledge Book · Topological Photonics</span></p>
             <h1>Topological Photonics from Maxwell's Equations</h1>
             <p>
-              从 Maxwell 方程出发组织拓扑光子学的基础框架，覆盖光子能带、Berry 曲率、Chern 数、边界态和体边对应，并延伸到 Floquet、Weyl 与非线性主题。
+              <span data-lang="zh">从 Maxwell 方程出发组织拓扑光子学的基础框架，覆盖光子能带、Berry 曲率、Chern 数、边界态和体边对应，并延伸到 Floquet、Weyl 与非线性主题。</span>
+              <span data-lang="en">A Maxwell-equation-first introduction to topological photonics, covering photonic bands, Berry curvature, Chern numbers, edge states, and bulk-boundary correspondence, with extensions to Floquet, Weyl, and nonlinear topics.</span>
             </p>
             <div class="detail-actions" aria-label="书籍操作">
-              <a class="button button-primary" href="../../downloads/topological-photonics.pdf" download="topological-photonics.pdf">下载 PDF</a>
-              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer">查看源稿</a>
-              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics" target="_blank" rel="noreferrer">提交反馈</a>
+              <a class="button button-primary" href="../../downloads/topological-photonics.pdf" download="topological-photonics.pdf"><span data-lang="zh">下载 PDF</span><span data-lang="en">Download PDF</span></a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer"><span data-lang="zh">查看源稿</span><span data-lang="en">View Source</span></a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics" target="_blank" rel="noreferrer"><span data-lang="zh">提交审议反馈</span><span data-lang="en">Submit Feedback</span></a>
             </div>
           </div>
 
           <aside class="meta-panel">
-            <h2>Book Status</h2>
+            <h2><span data-lang="zh">书稿状态</span><span data-lang="en">Book Status</span></h2>
             <dl class="meta-list">
               <div><dt>ID</dt><dd>topological-photonics</dd></div>
-              <div><dt>Status</dt><dd>Draft / Open Review Pending</dd></div>
-              <div><dt>Format</dt><dd>PDF · LaTeX source · index</dd></div>
-              <div><dt>Repository</dt><dd>Oxelra-yhy/Topological-Photonics</dd></div>
-              <div><dt>License</dt><dd>授权待确认</dd></div>
+              <div><dt><span data-lang="zh">状态</span><span data-lang="en">Status</span></dt><dd><span data-lang="zh">草稿 / 待公开审议</span><span data-lang="en">Draft / Open Review Pending</span></dd></div>
+              <div><dt><span data-lang="zh">格式</span><span data-lang="en">Format</span></dt><dd><span data-lang="zh">PDF · LaTeX 源稿 · 目录</span><span data-lang="en">PDF · LaTeX source · index</span></dd></div>
+              <div><dt><span data-lang="zh">仓库</span><span data-lang="en">Repository</span></dt><dd>Oxelra-yhy/Topological-Photonics</dd></div>
+              <div><dt><span data-lang="zh">授权</span><span data-lang="en">License</span></dt><dd><span data-lang="zh">授权待确认</span><span data-lang="en">Pending confirmation</span></dd></div>
             </dl>
           </aside>
         </div>
@@ -61,44 +69,45 @@
       <section class="detail-section">
         <div class="wrapper detail-layout">
           <article class="content-card">
-            <p class="section-kicker">Table of Contents</p>
-            <h2>目录</h2>
+            <p class="section-kicker"><span data-lang="zh">章节索引</span><span data-lang="en">Table of Contents</span></p>
+            <h2><span data-lang="zh">目录</span><span data-lang="en">Table of Contents</span></h2>
             <ol class="chapter-list">
-              <li><span>P</span><div><strong>Preface</strong><p>chapters/ch00_preface.tex</p></div></li>
-              <li><span>N</span><div><strong>Notation and Conventions</strong><p>chapters/ch00_notation.tex</p></div></li>
-              <li><span>01</span><div><strong>The Problem of Robust Light</strong><p>chapters/ch01_robust_light.tex</p></div></li>
-              <li><span>02</span><div><strong>Maxwell Equations as Dynamics</strong><p>chapters/ch02_maxwell_dynamics.tex</p></div></li>
-              <li><span>03</span><div><strong>Normal Modes and the Electromagnetic Inner Product</strong><p>chapters/ch03_normal_modes.tex</p></div></li>
-              <li><span>04</span><div><strong>Periodic Media and Photonic Bands</strong><p>chapters/ch04_periodic_media.tex</p></div></li>
-              <li><span>05</span><div><strong>Geometry of Maxwell Bands</strong><p>chapters/ch05_geometry_bands.tex</p></div></li>
-              <li><span>06</span><div><strong>Dirac Cones of Light</strong><p>chapters/ch06_dirac_cones.tex</p></div></li>
-              <li><span>07</span><div><strong>Breaking Time Reversal</strong><p>chapters/ch07_breaking_tr.tex</p></div></li>
-              <li><span>08</span><div><strong>The One-Way Interface</strong><p>chapters/ch08_one_way_interface.tex</p></div></li>
-              <li><span>09</span><div><strong>A Microwave Topological Crystal</strong><p>chapters/ch09_microwave_crystal.tex</p></div></li>
-              <li><span>10</span><div><strong>Computing Chern Numbers</strong><p>chapters/ch10_computing_chern.tex</p></div></li>
-              <li><span>11</span><div><strong>Reciprocal Designs and Pseudospin</strong><p>chapters/ch11_reciprocal_designs.tex</p></div></li>
-              <li><span>12</span><div><strong>Valleys and Lattices</strong><p>chapters/ch12_valleys.tex</p></div></li>
-              <li><span>13</span><div><strong>Floquet Light</strong><p>chapters/ch13_floquet.tex</p></div></li>
-              <li><span>14</span><div><strong>One Dimension</strong><p>chapters/ch14_one_dimension.tex</p></div></li>
-              <li><span>15</span><div><strong>Weyl Points of Maxwell Bands</strong><p>chapters/ch15_weyl_points.tex</p></div></li>
-              <li><span>16</span><div><strong>Synthetic Dimensions</strong><p>chapters/ch16_synthetic_dimensions.tex</p></div></li>
-              <li><span>17</span><div><strong>Loss, Gain, and Non-Hermitian Topology</strong><p>chapters/ch17_non_hermitian.tex</p></div></li>
-              <li><span>18</span><div><strong>Nonlinear and Quantum Frontiers</strong><p>chapters/ch18_nonlinear_quantum.tex</p></div></li>
-              <li><span>A</span><div><strong>Vector Identities and Functional Analysis</strong><p>chapters/appA_vector_identities.tex</p></div></li>
-              <li><span>B</span><div><strong>Differential Forms and Chern Classes</strong><p>chapters/appB_diff_forms.tex</p></div></li>
-              <li><span>C</span><div><strong>Numerical Recipes</strong><p>chapters/appC_numerical_recipes.tex</p></div></li>
-              <li><span>D</span><div><strong>Material Tensors and Sign Conventions</strong><p>chapters/appD_material_tensors.tex</p></div></li>
+              <li><span>P</span><div><strong>Preface</strong></div></li>
+              <li><span>N</span><div><strong>Notation and Conventions</strong></div></li>
+              <li><span>01</span><div><strong>The Problem of Robust Light</strong></div></li>
+              <li><span>02</span><div><strong>Maxwell Equations as Dynamics</strong></div></li>
+              <li><span>03</span><div><strong>Normal Modes and the Electromagnetic Inner Product</strong></div></li>
+              <li><span>04</span><div><strong>Periodic Media and Photonic Bands</strong></div></li>
+              <li><span>05</span><div><strong>Geometry of Maxwell Bands</strong></div></li>
+              <li><span>06</span><div><strong>Dirac Cones of Light</strong></div></li>
+              <li><span>07</span><div><strong>Breaking Time Reversal</strong></div></li>
+              <li><span>08</span><div><strong>The One-Way Interface</strong></div></li>
+              <li><span>09</span><div><strong>A Microwave Topological Crystal</strong></div></li>
+              <li><span>10</span><div><strong>Computing Chern Numbers</strong></div></li>
+              <li><span>11</span><div><strong>Reciprocal Designs and Pseudospin</strong></div></li>
+              <li><span>12</span><div><strong>Valleys and Lattices</strong></div></li>
+              <li><span>13</span><div><strong>Floquet Light</strong></div></li>
+              <li><span>14</span><div><strong>One Dimension</strong></div></li>
+              <li><span>15</span><div><strong>Weyl Points of Maxwell Bands</strong></div></li>
+              <li><span>16</span><div><strong>Synthetic Dimensions</strong></div></li>
+              <li><span>17</span><div><strong>Loss, Gain, and Non-Hermitian Topology</strong></div></li>
+              <li><span>18</span><div><strong>Nonlinear and Quantum Frontiers</strong></div></li>
+              <li><span>A</span><div><strong>Vector Identities and Functional Analysis</strong></div></li>
+              <li><span>B</span><div><strong>Differential Forms and Chern Classes</strong></div></li>
+              <li><span>C</span><div><strong>Numerical Recipes</strong></div></li>
+              <li><span>D</span><div><strong>Material Tensors and Sign Conventions</strong></div></li>
             </ol>
           </article>
 
           <aside class="review-note">
-            <h2>Open Review Focus</h2>
+            <h2><span data-lang="zh">公开审议重点</span><span data-lang="en">Open Review Focus</span></h2>
             <p>
-              请优先提交概念跳跃、公式疑点、图表可复现性和参考文献来源问题。反馈最好指向具体章节、页码、公式或图表。
+              <span data-lang="zh">请优先提交概念跳跃、公式疑点、图表可复现性和参考文献来源问题。反馈最好指向具体章节、页码、公式或图表。</span>
+              <span data-lang="en">Please prioritize conceptual gaps, derivation questions, figure reproducibility, and reference trails. Feedback is most useful when it points to a chapter, page, equation, or figure.</span>
             </p>
             <div class="detail-actions">
-              <a class="button button-primary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics" target="_blank" rel="noreferrer">新建 Issue</a>
-              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues" target="_blank" rel="noreferrer">查看 Issues</a>
+              <a class="button button-primary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues/new?title=%5BReview%5D%20Topological%20Photonics" target="_blank" rel="noreferrer"><span data-lang="zh">新建 Issue</span><span data-lang="en">New Issue</span></a>
+              <a class="button button-secondary" href="https://github.com/Oxelra-yhy/Topological-Photonics/issues" target="_blank" rel="noreferrer"><span data-lang="zh">查看 Issues</span><span data-lang="en">View Issues</span></a>
             </div>
           </aside>
         </div>
@@ -108,10 +117,11 @@
     <footer class="site-footer">
       <div class="wrapper footer-inner">
         <span>© Lumin / Oxelra</span>
-        <a href="../../">书目首页</a>
-        <a href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer">仓库</a>
-        <a href="https://github.com/Oxelra-yhy/Topological-Photonics/releases" target="_blank" rel="noreferrer">Releases</a>
+        <a href="../../"><span data-lang="zh">书目首页</span><span data-lang="en">Catalog Home</span></a>
+        <a href="https://github.com/Oxelra-yhy/Topological-Photonics" target="_blank" rel="noreferrer"><span data-lang="zh">仓库</span><span data-lang="en">Repository</span></a>
+        <a href="https://github.com/Oxelra-yhy/Topological-Photonics/releases" target="_blank" rel="noreferrer"><span data-lang="zh">版本发布</span><span data-lang="en">Releases</span></a>
       </div>
     </footer>
+    <script src="../../app.js?v=2026-06-27-bilingual-toggle" defer></script>
   </body>
 </html>

@@ -4,8 +4,8 @@
       "id": "oxelra-open-knowledge-workflow",
       "name": "Oxelra Open Knowledge Workflow",
       "owner": "Oxelra",
-      "description": "面向人类研究人员和 Agent 的 open knowledge books 工作流，覆盖主题规划、章节写作、图表整理、术语一致性检查和公开审阅问题归类。",
-      "toolchain": "研究写作 Agent、文献线索整理、LaTeX 源稿维护、Issue 审阅整理",
+      "description": "面向人类研究人员和 Agent 的开放知识研究专著工作流，覆盖主题规划、章节写作、图表整理、术语一致性检查和公开审阅问题归类。",
+      "toolchain": "研究写作 Agent、文献线索整理、LaTeX 源稿维护、Issues 审阅整理",
       "disclosure": "当前书稿处于公开审阅前阶段，事实判断、公式推导、引用准确性和最终版本仍需维护者、领域读者与 Agent 辅助流程共同复核。"
     }
   ]

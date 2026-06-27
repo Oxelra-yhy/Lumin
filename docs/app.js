@@ -1,60 +1,69 @@
-const nodes = {
-  bookGrid: document.querySelector("#bookGrid"),
-  bookCount: document.querySelector("#bookCount")
-};
+(() => {
+  const storageKey = "lumin-language";
+  const supported = new Set(["zh", "en"]);
 
-const DATA_VERSION = "2026-06-27-open-knowledge";
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function localDetailUrl(book) {
-  return `books/${book.id}/`;
-}
-
-function bookCard(book, index) {
-  const titleId = `book-title-${escapeHtml(book.id)}`;
-  const pdfDownload = book.pdfFileName ? ` download="${escapeHtml(book.pdfFileName)}"` : "";
-
-  return `
-    <article class="book-index-card" aria-labelledby="${titleId}">
-      <span class="book-index-card__number">${String(index + 1).padStart(2, "0")}</span>
-      <span class="book-index-card__domain">${escapeHtml(book.domain)}</span>
-      <h3 class="book-index-card__title" id="${titleId}">${escapeHtml(book.title)}</h3>
-      <span class="book-index-card__summary">${escapeHtml(book.summary)}</span>
-      <div class="book-index-card__actions">
-        <a href="${escapeHtml(localDetailUrl(book))}">View index</a>
-        <span>
-          <a href="${escapeHtml(book.pdfUrl)}"${pdfDownload}>下载</a>
-          <a href="${escapeHtml(book.sourceUrl)}" target="_blank" rel="noreferrer">仓库</a>
-        </span>
-      </div>
-    </article>
-  `;
-}
-
-async function init() {
-  const booksResponse = await fetch(`data/books.json?v=${DATA_VERSION}`);
-
-  if (!booksResponse.ok) {
-    throw new Error("无法读取平台数据。请通过本地服务器或 GitHub Pages 打开站点。");
+  function normalize(value) {
+    return supported.has(value) ? value : null;
   }
 
-  const books = (await booksResponse.json()).books || [];
-
-  nodes.bookGrid.innerHTML = books.map(bookCard).join("");
-
-  if (nodes.bookCount) {
-    nodes.bookCount.textContent = String(books.length);
+  function urlLanguage() {
+    return normalize(new URLSearchParams(window.location.search).get("lang"));
   }
-}
 
-init().catch((error) => {
-  nodes.bookGrid.innerHTML = `<p class="notice">${escapeHtml(error.message)}</p>`;
-});
+  function storedLanguage() {
+    try {
+      return normalize(window.localStorage.getItem(storageKey));
+    } catch {
+      return null;
+    }
+  }
+
+  function remember(language) {
+    try {
+      window.localStorage.setItem(storageKey, language);
+    } catch {
+      // The toggle still works if browser storage is unavailable.
+    }
+  }
+
+  function setUrlLanguage(language) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", language);
+    window.history.replaceState({}, "", url);
+  }
+
+  function applyLanguage(language, options = {}) {
+    const nextLanguage = normalize(language) || "zh";
+
+    document.documentElement.dataset.language = nextLanguage;
+    document.documentElement.lang = nextLanguage === "zh" ? "zh-CN" : "en";
+
+    document.querySelectorAll("[data-lang-option]").forEach((button) => {
+      const isActive = button.dataset.langOption === nextLanguage;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    if (options.persist) {
+      remember(nextLanguage);
+    }
+
+    if (options.updateUrl) {
+      setUrlLanguage(nextLanguage);
+    }
+  }
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-lang-option]");
+    if (!button) return;
+
+    applyLanguage(button.dataset.langOption, {
+      persist: true,
+      updateUrl: true
+    });
+  });
+
+  applyLanguage(urlLanguage() || storedLanguage() || "zh", {
+    persist: Boolean(urlLanguage())
+  });
+})();

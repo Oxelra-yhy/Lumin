@@ -1,22 +1,18 @@
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="56">
-        <img src="docs/assets/lumin-logo.png" alt="Lumin" width="36" />
-      </td>
-    </tr>
-  </table>
+<p align="center">
+  <img src="docs/assets/lumin-logo.png" alt="Lumin" width="64" />
+</p>
 
-  <h1>Lumin</h1>
+<h1 align="center">Lumin</h1>
 
-  <p><strong>面向人类研究人员和 Agent 的开放知识研究专著。</strong></p>
+<p align="center">
+  <strong>面向人类研究人员和 Agent 的开放知识研究专著。</strong>
+</p>
 
-  <p>
-    <a href="https://oxelra-yhy.github.io/Lumin/">在线站点</a>
-    ·
-    <a href="https://oxelra.com/">Oxelra</a>
-  </p>
-</div>
+<p align="center">
+  <a href="https://oxelra-yhy.github.io/Lumin/">在线站点</a>
+  ·
+  <a href="https://oxelra.com/">Oxelra</a>
+</p>
 
 ## 项目定位
 
@@ -26,10 +22,17 @@ Lumin 是 Oxelra 的开放知识研究专著入口。这些书稿由智能体参
 
 ## 书稿
 
-| 书稿 | 主题 | 入口 |
-| --- | --- | --- |
-| **Topological Photonics from Maxwell's Equations** | 从 Maxwell 方程出发组织拓扑光子学的基础框架，覆盖模式理论、Bloch 能带、Berry 曲率、Chern 数、边界态、体边对应，并延伸至 Floquet 系统、Weyl 点、合成维度和非线性量子边界通道。 | [仓库](https://github.com/Oxelra-yhy/Topological-Photonics) |
-| **Non-Hermitian Photonics** | 以开放光学系统为主线，讨论损耗、增益、色散、辐射边界和散射极点如何改变本征模图景，并展开准正规模、异常点、PT 对称、非布洛赫拓扑、皮肤效应、BIC 与器件物理边界。 | [仓库](https://github.com/Oxelra-yhy/Non-Hermitian) |
+### Topological Photonics from Maxwell's Equations
+
+从 Maxwell 方程出发组织拓扑光子学的基础框架，覆盖模式理论、Bloch 能带、Berry 曲率、Chern 数、边界态、体边对应，并延伸至 Floquet 系统、Weyl 点、合成维度和非线性量子边界通道。
+
+[查看仓库](https://github.com/Oxelra-yhy/Topological-Photonics)
+
+### Non-Hermitian Photonics
+
+以开放光学系统为主线，讨论损耗、增益、色散、辐射边界和散射极点如何改变本征模图景，并展开准正规模、异常点、PT 对称、非布洛赫拓扑、皮肤效应、BIC 与器件物理边界。
+
+[查看仓库](https://github.com/Oxelra-yhy/Non-Hermitian)
 
 两部书稿目前均处于公开审议前草稿阶段。读者可以通过对应仓库的 Issues 提交概念跳跃、推导疑点、引用线索、图表问题和实验可复现性反馈。
 

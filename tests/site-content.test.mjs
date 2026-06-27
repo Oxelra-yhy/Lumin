@@ -10,7 +10,7 @@ const stylesCss = readFileSync(join(root, "docs", "styles.css"), "utf8");
 const appJs = readFileSync(join(root, "docs", "app.js"), "utf8");
 
 const requiredText = [
-  "面向人类研究人员和 Agent 的",
+  "面向人类研究人员和 Agent 的 Open Knowledge Books",
   "开源书籍，知识共议",
   "公开审议",
   "智能体写作",
@@ -55,7 +55,7 @@ for (const html of [indexHtml, topologicalHtml, nonHermitianHtml]) {
   assert.ok(!html.includes("<small>"), "Expected header subtitle to be removed");
 }
 
-assert.ok(indexHtml.includes("Open knowledge books for human researchers and Agents"));
+assert.ok(indexHtml.includes("Open Knowledge Books for Human Researchers and Agents"));
 assert.ok(indexHtml.includes("Open Source, Open Review, Continuous Revision"));
 assert.ok(indexHtml.includes("Issue Feedback"));
 assert.ok(indexHtml.includes("Versioned Releases"));
@@ -63,6 +63,10 @@ assert.ok(indexHtml.includes("面向人类研究人员和 Agent 的"));
 assert.ok(indexHtml.includes("开源书籍，知识共议"));
 assert.ok(indexHtml.includes("由智能体参与写作"));
 assert.ok(indexHtml.includes("Lumin 以专著体量组织每个由智能体生成并持续修订的研究主题。每本书都保留源稿、PDF、目录、版本记录和公开反馈入口，让阅读、引用与复核都有清晰路径。"));
+assert.ok(indexHtml.includes('class="book-card-body"'));
+assert.ok(indexHtml.includes('class="book-cover"'));
+assert.ok(indexHtml.includes('assets/covers/topological-photonics.png'));
+assert.ok(indexHtml.includes('assets/covers/non-hermitian-photonics.png'));
 assert.ok(indexHtml.includes('class="revision-grid"'));
 assert.ok(indexHtml.includes('class="revision-card"'));
 assert.ok(indexHtml.includes("拓扑光子学 · 反馈"));

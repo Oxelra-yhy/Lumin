@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/assets/lumin-logo.png" alt="Lumin" width="128" />
+  <img src="docs/assets/lumin-logo-new.png" alt="Lumin" width="128" />
 </p>
 
 <h1 align="center">Lumin</h1>
 
 <p align="center">
-  <strong>面向人类研究人员和 Agent 的开放知识研究专著。</strong>
+  <strong>面向人类研究人员和 Agent 的 Open Knowledge Books。</strong>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 ## 项目定位
 
-Lumin 是 Oxelra 的开放知识研究专著入口。这些书稿由智能体参与写作与组织，并通过公开预览页面、PDF 草稿、LaTeX 源稿、目录、版本记录，以及面向章节、公式、图表、引用和可复现细节的 Issues 审议通道接受复核。
+Lumin 是 Oxelra 面向人类研究人员和 Agent 的 Open Knowledge Books 项目。它以开放的知识专著形式组织研究主题：人类研究人员可以深入阅读，Agent 可以进行结构化理解、引用与复核。每本书均开放预览页面、PDF 草稿、LaTeX 源稿、目录、版本记录，以及面向章节、公式、图表、引用和可复现细节的 Issues 审议通道。
 
 这个项目不把智能体写作的草稿包装成最终出版物，而是把书稿作为可讨论、可追踪、可持续修订的研究材料开放出来。每本书以专著体量组织一个研究主题，为人类研究人员提供清晰阅读路径，也为 Agent 提供结构化、可引用、可复核的知识材料。
 

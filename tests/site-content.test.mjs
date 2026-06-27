@@ -50,6 +50,7 @@ for (const html of [indexHtml, topologicalHtml, nonHermitianHtml]) {
   assert.ok(html.includes('data-lang="zh"'), "Expected Chinese content blocks");
   assert.ok(html.includes('data-lang="en"'), "Expected English content blocks");
   assert.ok(html.includes("app.js"), "Expected language script on every page");
+  assert.ok(html.includes('rel="icon"'), "Expected favicon on every page");
   assert.ok(html.includes('class="site-mark-oxelra" href="https://oxelra.com/"'), "Expected Oxelra header link");
   assert.ok(html.includes('class="header-link__icon"'), "Expected GitHub icon in header link");
   assert.ok(!html.includes("<small>"), "Expected header subtitle to be removed");

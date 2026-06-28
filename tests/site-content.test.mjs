@@ -10,11 +10,12 @@ const stylesCss = readFileSync(join(root, "docs", "styles.css"), "utf8");
 const appJs = readFileSync(join(root, "docs", "app.js"), "utf8");
 
 const requiredText = [
-  "面向人类研究人员和 Agent 的 Open Knowledge Books",
+  "面向人类研究人员和 Agent 的开放式科学知识专著",
+  "面向人类研究人员和 Agent · 科学专著 · 开源共议 · 知识开放",
   "开源书籍，知识共议",
   "公开审议",
-  "智能体写作",
-  "可追踪修订",
+  "公开修订",
+  "开放式科学知识专著",
   "Topological Photonics from Maxwell's Equations",
   "Non-Hermitian Photonics",
   "开源审议，持续修订",
@@ -62,8 +63,9 @@ assert.ok(indexHtml.includes("Issue Feedback"));
 assert.ok(indexHtml.includes("Versioned Releases"));
 assert.ok(indexHtml.includes("面向人类研究人员和 Agent 的"));
 assert.ok(indexHtml.includes("开源书籍，知识共议"));
-assert.ok(indexHtml.includes("由智能体参与写作"));
-assert.ok(indexHtml.includes("Lumin 以专著体量组织每个由智能体生成并持续修订的研究主题。每本书都保留源稿、PDF、目录、版本记录和公开反馈入口，让阅读、引用与复核都有清晰路径。"));
+assert.ok(indexHtml.includes("面向人类研究人员和 Agent · 科学专著 · 开源共议 · 知识开放"));
+assert.ok(indexHtml.includes("Lumin 以专著体量组织每个由 Agent 参与生成并持续修订的研究主题。每本书都保留源稿、PDF、目录、版本记录和公开反馈入口，让阅读、引用与复核都有清晰路径。"));
+assert.ok(indexHtml.includes("Lumin 不把 Agent 参与生成的草稿包装成最终出版物。每本书都保留公开源稿、问题反馈、修订记录和版本归档，让研究人员与 Agent 都能追踪知识材料的形成过程。"));
 assert.ok(indexHtml.includes('class="book-card-body"'));
 assert.ok(indexHtml.includes('class="book-cover"'));
 assert.ok(indexHtml.includes('assets/covers/topological-photonics.png'));
